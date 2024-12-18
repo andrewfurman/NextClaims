@@ -1,0 +1,38 @@
+> next dev --port 3000 --hostname 0.0.0.0
+
+   ▲ Next.js 14.1.0
+   - Local:        http://localhost:3000
+   - Network:      http://0.0.0.0:3000
+
+ ✓ Ready in 1284ms
+ ⨯ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[6].oneOf[13].use[1]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[6].oneOf[13].use[2]!./styles/globals.css
+Error: Cannot find module 'autoprefixer'
+Require stack:
+- /home/runner/NextClaims/node_modules/next/dist/build/webpack/config/blocks/css/plugins.js
+- /home/runner/NextClaims/node_modules/next/dist/build/webpack/config/blocks/css/index.js
+- /home/runner/NextClaims/node_modules/next/dist/build/webpack/config/index.js
+- /home/runner/NextClaims/node_modules/next/dist/build/webpack-config.js
+- /home/runner/NextClaims/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /home/runner/NextClaims/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /home/runner/NextClaims/node_modules/next/dist/server/lib/router-server.js
+- /home/runner/NextClaims/node_modules/next/dist/server/lib/start-server.js
+    at Array.map (<anonymous>)
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[6].oneOf[13].use[1]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[6].oneOf[13].use[2]!./styles/globals.css
+./styles/globals.css
+ ○ Compiling / ...
+ ⨯ ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[6].oneOf[13].use[1]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[6].oneOf[13].use[2]!./styles/globals.css
+Error: Cannot find module 'autoprefixer'
+Require stack:
+- /home/runner/NextClaims/node_modules/next/dist/build/webpack/config/blocks/css/plugins.js
+- /home/runner/NextClaims/node_modules/next/dist/build/webpack/config/blocks/css/index.js
+- /home/runner/NextClaims/node_modules/next/dist/build/webpack/config/index.js
+- /home/runner/NextClaims/node_modules/next/dist/build/webpack-config.js
+- /home/runner/NextClaims/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /home/runner/NextClaims/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /home/runner/NextClaims/node_modules/next/dist/server/lib/router-server.js
+- /home/runner/NextClaims/node_modules/next/dist/server/lib/start-server.js
+    at Array.map (<anonymous>)
+Import trace for requested module:
+./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[6].oneOf[13].use[1]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[6].oneOf[13].use[2]!./styles/globals.css
+./styles/globals.css
