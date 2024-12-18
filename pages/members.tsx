@@ -1,7 +1,6 @@
 
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
 
 interface Member {
   id: number;
@@ -41,34 +40,34 @@ const members: Member[] = [
 
 const Members: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <div className="min-h-screen p-8">
       <Head>
         <title>Members - Health Insurance</title>
         <meta name="description" content="Health insurance members list" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>Members List</h1>
+      <main className="max-w-6xl mx-auto">
+        <h1 className="text-4xl font-bold text-center mb-8">Members List</h1>
 
-        <div className={styles.tableContainer}>
-          <table className={styles.table}>
-            <thead>
+        <div className="overflow-x-auto shadow-lg rounded-lg">
+          <table className="w-full table-auto">
+            <thead className="bg-gray-50">
               <tr>
-                <th>Name</th>
-                <th>Policy Number</th>
-                <th>Coverage</th>
-                <th>Start Date</th>
-                <th>Status</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Name</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Policy Number</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Coverage</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Start Date</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody className="bg-white divide-y divide-gray-200">
               {members.map((member) => (
-                <tr key={member.id}>
-                  <td>{member.name}</td>
-                  <td>{member.policyNumber}</td>
-                  <td>{member.coverage}</td>
-                  <td>{member.startDate}</td>
-                  <td>{member.status}</td>
+                <tr key={member.id} className="hover:bg-gray-50">
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{member.name}</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{member.policyNumber}</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{member.coverage}</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{member.startDate}</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{member.status}</td>
                 </tr>
               ))}
             </tbody>
